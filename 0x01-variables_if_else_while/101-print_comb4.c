@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 /**
- * MAIN16 - Entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
+
 	int i;
 	int j;
 	int k;
