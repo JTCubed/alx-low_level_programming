@@ -6,16 +6,16 @@
  * Return: Always 0 (Success)
  */
 
+
+
 int main(void)
 {
-	int i;
+	char i;
 
-	i = 0;
-	while (i < 10)
+	for (i = 'z'; i >= 'a'; i--)
 	{
-		putchar('0' + i);
-		i = i + 1;
+		putchar(i);
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }

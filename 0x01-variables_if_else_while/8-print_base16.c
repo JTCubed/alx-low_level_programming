@@ -11,17 +11,10 @@ int main(void)
 	int i;
 
 	i = 0;
-	while (i < 10)
+	while (i < 16)
 	{
-		if (i != 9)
-		{
-			printf("%d, ", i);
-			i = i + 1;
-		} else
-		{
-			printf("%d", i);
-			i = i + 1;
-		}
+		printf("%x", i);
+		i = i + 1;
 	}
 	printf("\n");
 	return (0);
