@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * _isdigit - check the code
+ * mul - mutliplies two integers and returns the result.
  *
- *@c : ASCII equivalent
+ *@i:int to be added
+ *@j:int to be added
  *
- * Return: 1 if c  is a letter, lowercase or uppercase
- *
+ * Return: Always 0.
  */
 
-int _isdigit(int c)
+int mul(int i, int j)
 {
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	{
-		return (0);
-	}
+	int n;
+
+	n = i * j;
+	return (n);
 }
