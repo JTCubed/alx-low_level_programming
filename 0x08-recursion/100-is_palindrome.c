@@ -13,12 +13,4 @@ int is_palindrome(char *s)
 	s++;
 	return (1 + is_palindrome(s));
 
-/**
- *	if (s <= 1)
- *	{
- *		return (1);
- *	}
- *
- *	return (0);
- */
 }
