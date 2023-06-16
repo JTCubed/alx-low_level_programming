@@ -12,7 +12,7 @@
 
 int *array_range(int min, int max)
 {
-	int i, res;
+	int i, j = 0, res;
 	int *s;
 
 	res = max - min + 1;
@@ -27,7 +27,8 @@ int *array_range(int min, int max)
 
 	for (i = min; i <= max; i++)
 	{
-		s[i] = i;
+		s[j] = i;
+		j++;
 	}
 	return (s);
 }
