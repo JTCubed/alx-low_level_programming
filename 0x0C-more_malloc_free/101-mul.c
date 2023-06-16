@@ -18,16 +18,16 @@ int main(int argc __attribute__((unused)), char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	res0 = atoi(argv[1]);
 	res1 = atoi(argv[2]);
 	res = res0 * res1;
 
-	if ( res0 < 0 || res1 < 0)
+	if (res0 < 0 || res1 < 0)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 
 	printf("%d\n", res);
