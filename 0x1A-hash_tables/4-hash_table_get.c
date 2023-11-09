@@ -23,6 +23,17 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		return (item->value);
 	}
+	else
+	{
+		while(strcmp(item->key, key) != 0)
+		{
+			item = item->next;
+			if (item->next == NULL)
+			{
+				return (NULL);
+			}
+		}
+	}
 
 	return (NULL);
 }
