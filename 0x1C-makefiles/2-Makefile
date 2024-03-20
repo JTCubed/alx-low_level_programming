@@ -1,12 +1,10 @@
 CC := gcc
-SRC := *.c
+SRC := ${wildcard *.c}
 OBJ := $(SRC:.c=.o)
 NAME = school
 
-${NAME}: ${SRC}
+all: ${SRC}
 	${CC} ${SRC} -o ${NAME}
-
-all: ${NAME}
 
 %.o: %.c
 	$(CC) -c -o $@ $<
